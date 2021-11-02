@@ -1,16 +1,16 @@
 ---
-title: BannerPlugin
-group: webpack
-contributors:
+제목 : BannerPlugin
+그룹 : webpack
+기여자 :
   - simon04
   - byzyk
   - chenxsan
-related:
-  - title: banner-plugin-hashing test
+관련 자료 :
+  - 제목 : banner-plugin-hashing test
     url: https://github.com/webpack/webpack/blob/master/test/configCases/plugins/banner-plugin-hashing/webpack.config.js
 ---
 
-Adds a banner to the top of each generated chunk.
+생성된 각각의 청크 맨 위에 배너를 추가하세요.
 
 ```javascript
 const webpack = require('webpack');
@@ -24,12 +24,12 @@ new webpack.BannerPlugin(options);
 
 ```ts
 {
-  banner: string | function, // the banner as string or function, it will be wrapped in a comment
-  raw: boolean, // if true, banner will not be wrapped in a comment
-  entryOnly: boolean, // if true, the banner will only be added to the entry chunks
-  test: string | RegExp | [string, RegExp], // Include all modules that pass test assertion.
-  include: string | RegExp | [string, RegExp], // Include all modules matching any of these conditions.
-  exclude: string | RegExp | [string, RegExp], // Exclude all modules matching any of these conditions.
+  banner: string | function, // 배너를 문자열 또는 함수로 사용하면 주석으로 래핑됩니다.
+  raw: boolean, // true이면 배너가 주석에 래핑되지 않습니다.
+  entryOnly: boolean, // true인 경우 배너는 항목 청크에만 추가됩니다.
+  test: string | RegExp | [string, RegExp], // 테스트 어써션(표명)을 통과하는 모든 모듈을 포함합니다.
+  include: string | RegExp | [string, RegExp], // 이러한 조건 중 하나와 일치하는 모든 모듈을 포함합니다.
+  exclude: string | RegExp | [string, RegExp], // 이러한 조건과 일치하는 모든 모듈을 제외합니다.
 }
 ```
 
@@ -53,7 +53,7 @@ new webpack.BannerPlugin({
 
 ## Placeholders
 
-Since webpack 2.5.0, placeholders are evaluated in the `banner` string:
+webpack 2.5.0부터 자리 표시자는 `banner` 문자열에서 평가됩니다.:
 
 ```javascript
 import webpack from 'webpack';

@@ -38,12 +38,12 @@ new webpack.BannerPlugin(options);
 ```javascript
 import webpack from 'webpack';
 
-// string
+// 문자열
 new webpack.BannerPlugin({
   banner: 'hello world',
 });
 
-// function
+// 함수
 new webpack.BannerPlugin({
   banner: (yourVariable) => {
     return `yourVariable: ${yourVariable}`;
